@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    color: whitesmoke;
+}
+.container{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: -10px -10px 15px #ffffff08, 10px 10px 15px #0000001c; 
+    border: 15px solid #0000001c;
+    background-color:#222;
+    position: relative;
+}
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: -10px -10px 15px #ffffff08, 10px 10px 15px #0000001c, inset -10px -10px 15px  #ffffff08, inset 10px 10px 15px #0000001c; 
+    background-color: #222; 
+    border-color: transparent;
+    position: absolute;
+}
+button i {
+    color: whitesmoke;
+    font-size: 25px; 
+}
+#empezar{
+    left: calc( 50% - 25px );
+    top: -70px; 
+}
+#parar{
+    transform: rotate(41deg);
+    transform-origin: bottom;
+    left: 79%;
+    top: -12%;
+}
+.manecilla{
+    height: 40%;
+    width: 2%;
+    position: absolute; 
+    left: calc(50% - 1%);
+    bottom: 50%;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    box-shadow:-2px -2px 10px #00000066;
+    transform-origin: left;
+}
+#timer{
+    width: 50%;
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    font-size: 20px;
+}
+.centesimas{
+    width: 44%;
+    height: 44%;
+    border-radius: 50%;
+    box-shadow:  inset -10px -10px 15px  #ffffff08, inset 10px 10px 15px #0000001c; 
+    border: 5px solid #0000001c;
+    background-color:#222;
+    position: relative;
+    left: 28%;
+}
+.pulsado1{
+    animation: pulsar1 0.2s linear forwards; 
+}
+.pulsado2{
+    animation: pulsar2 0.2s linear forwards; 
+}
+@keyframes pulsar1 {
+    0%{
+        top: -70px; 
+    }
+    50%{
+        top: -50px;
+    }
+    100%{
+        top: -70px; 
+    }
+}
+@keyframes pulsar2 {
+    0%{
+        left: 79%;
+        top: -12%;
+    }
+    50%{
+        left: 75%;
+        top: -6%;
+    }
+    100%{
+        left: 79%;
+        top: -12%;
+    }
+} 

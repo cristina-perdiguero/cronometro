@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro</title><script src="https://kit.fontawesome.com/b1fb0d435a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container segundos">
+        <button id="empezar"><i class="far fa-play-circle"></i></button>
+        <button disabled id="parar"><i class="fas fa-pause-circle"></i></button>
+        <div class="centesimas">
+            <div class="manecilla" id="manecilla-cent"></div>
+        </div>
+        <div class="manecilla" id="manecilla-seg"></div>
+        <div class="pantalla">
+            <div id="timer">
+                <span id="minutos">00</span>:
+                <span id="segundos">00</span>:
+                <span id="centesimas">00</span>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
